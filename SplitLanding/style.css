@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.link-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: black solid 2px;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+}
+
+.split.left {
+    left: 0;
+    background-color: blueviolet;
+}
+
+.split.right::before {
+    content: "";
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.split.right {
+    right: 0;
+    background-color: chartreuse;
+}
+
+.split.left .btn:hover {
+    background-color: brown;
+    border-color: aqua;
+}
+
+.split.right .btn:hover {
+    background-color: brown;
+    border-color: aqua;
+}
+
+.split.right, .split.left,
+.split.left::before, .split.right::before {
+    transition: all 1s ease-in-out;
+} 
+
+.hover-left .left {
+    width: 75%;
+}
+
+.hover-left .right {
+    width: 25%;
+}
+
+.hover-right .right {
+    width: 75%;
+}
+
+.hover-right .left {
+    width: 25%;
+}
+
+
+
+
+
+
+
+
