@@ -1,1 +1,1 @@
-# 50Days50JavascriptProjects
+# 50JavascriptProjects
